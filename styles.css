@@ -6,10 +6,9 @@
 }
 
 
-*/
 body {
   font-family: Arial, sans-serif; 
-  background-color: #f0f2f5;     
+  background-color: #f0f2f5;
   color: #333;                   
   padding: 20px;                 
 }
@@ -22,23 +21,26 @@ h1 {
   color: #2c3e50;
 }
 
-summary {
+
+
+#summary {
   background-color: #2c3e50;   
   color: white;
   padding: 16px 24px;
   border-radius: 10px;        
   display: flex;             
   gap: 24px;                 
-  flex-wrap: wrap;             
+  flex-wrap: wrap;            
   margin-bottom: 24px;
 }
 
 
 .summary-item {
   display: flex;
-  flex-direction: column;      
+  flex-direction: column;     
   align-items: center;
 }
+
 
 .summary-item span:first-child {
   font-size: 2rem;
@@ -52,7 +54,7 @@ summary {
 }
 
 
-habit-form-container {
+#habit-form-container {
   background-color: white;
   padding: 24px;
   border-radius: 10px;
@@ -69,9 +71,10 @@ habit-form-container {
 
 .form-row {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;   
   margin-bottom: 14px;
 }
+
 
 .form-row label {
   font-weight: bold;
@@ -80,24 +83,29 @@ habit-form-container {
   color: #555;
 }
 
+
 .form-row input,
 .form-row select {
   padding: 10px 12px;
   border: 2px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
-  outline: none;           
+  outline: none;             
   transition: border-color 0.2s; 
 }
+
 
 .form-row input:focus,
 .form-row select:focus {
   border-color: #3498db;
 }
 
-error-message {
+
+
+
+#error-message {
   display: none;              
-  color: #e74c3c;            
+  color: #e74c3c;             
   background-color: #fdecea; 
   border: 1px solid #e74c3c;
   border-radius: 6px;
@@ -107,35 +115,39 @@ error-message {
 }
 
 
-submit-btn {
+
+#submit-btn {
   background-color: #27ae60;  
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 1rem;
   border-radius: 6px;
-  cursor: pointer;             
+  cursor: pointer;            
   width: 100%;                 
   transition: background-color 0.2s;
 }
 
-submit-btn:hover {
+#submit-btn:hover {
   background-color: #219150;   
 }
 
 
-habits-section h2 {
+
+#habits-section h2 {
   color: #2c3e50;
   margin-bottom: 16px;
   font-size: 1.2rem;
 }
 
-empty-message {
+
+#empty-message {
   text-align: center;
   color: #999;
   font-size: 1rem;
   padding: 40px 0;
 }
+
 
 .habit-card {
   background-color: white;
@@ -146,15 +158,15 @@ empty-message {
   display: flex;
   align-items: center;
   gap: 16px;
-  transition: opacity 0.2s;  
+  transition: opacity 0.2s;   
 }
 
 .habit-card.done {
-  opacity: 0.55;          
+  opacity: 0.55;            
 }
 
 .habit-card.done .habit-name {
-  text-decoration: line-through;
+  text-decoration: line-through; 
   color: #999;
 }
 
@@ -162,12 +174,13 @@ empty-message {
   width: 22px;
   height: 22px;
   cursor: pointer;
-  accent-color: #27ae60;     
-  flex-shrink: 0;           
+  accent-color: #27ae60;    
+  flex-shrink: 0;             
 }
 
+
 .habit-info {
-  flex: 1;                  
+  flex: 1;                 
 }
 
 .habit-name {
@@ -185,17 +198,16 @@ empty-message {
 
 .habit-streak {
   background-color: #fff3cd;  
-  color: #856404;             
+  color: #856404;            
   padding: 4px 10px;
-  border-radius: 20px;       
+  border-radius: 20px;      
   font-size: 0.85rem;
   font-weight: bold;
-  white-space: nowrap;       
+  white-space: nowrap;        
 }
 
-
 .delete-btn {
-  background-color: #e74c3c;  
+  background-color: #e74c3c; 
   color: white;
   border: none;
   padding: 6px 12px;
@@ -210,6 +222,8 @@ empty-message {
   background-color: #c0392b; 
 }
 
+
+
 .category-badge {
   display: inline-block;
   padding: 2px 8px;
@@ -219,6 +233,7 @@ empty-message {
   margin-left: 6px;
   color: white;
 }
+
 
 .badge-health    { background-color: #27ae60; } 
 .badge-fitness   { background-color: #e67e22; } 
