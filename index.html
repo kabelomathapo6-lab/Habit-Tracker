@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>My Habit Tracker</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <h1>📋 My Habit Tracker</h1>
+
+  <div id="summary">
+    <div class="summary-item">
+      <span id="total-count">0</span>
+      <span>Total Habits</span>
+    </div>
+    <div class="summary-item">
+      <span id="done-count">0</span>
+      <span>Done Today</span>
+    </div>
+    <div class="summary-item">
+      <span id="percent-done">0%</span>
+      <span>Completion</span>
+    </div>
+  </div>
+
+
+  <div id="habit-form-container">
+    <h2>➕ Add a New Habit</h2>
+
+    <div id="error-message"></div>
+
+    <form id="habit-form">
+
+      <div class="form-row">
+        <label for="habit-name">Habit Name</label>
+        <input
+          type="text"
+          id="habit-name"
+          placeholder="e.g. Drink 8 glasses of water"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="habit-target">Target (days per week)</label>
+        <input
+          type="number"
+          id="habit-target"
+          placeholder="Enter a number from 1 to 7"
+          min="1"
+          max="7"
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="habit-category">Category</label>
+        <select id="habit-category">
+          <option value="">-- Select a category --</option>
+          <option value="health">Health</option>
+          <option value="fitness">Fitness</option>
+          <option value="learning">Learning</option>
+          <option value="mindset">Mindset</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="submit" id="submit-btn">Add Habit</button>
+
+    </form>
+  </div>
+
+  
+  <div id="habits-section">
+    <h2>📌 Your Habits</h2>
+    <div id="habit-list">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
