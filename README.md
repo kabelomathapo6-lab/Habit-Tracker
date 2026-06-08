@@ -24,7 +24,7 @@ habit-tracker/
 
 # How the Code Works
 
-# 1. index.html- The Structure
+# 1. index.html-The Structure
 The HTML is split into three sections:
 - *Summary bar* displays total habits, done count, and completion %
 - *Form*  three inputs (name, target, category) and a submit button
@@ -34,7 +34,7 @@ The `<link>` tag connects the CSS file and the `<script>` tag at the bottom conn
 
 ---
 
-# 2. styles.css — The Styling
+# 2. styles.css-The Styling
 Key styling decisions:
 - *Cards*: each habit displays as a white rounded card with a shadow
 - *Done state*: ticked habits fade to 55% opacity and the name gets a strikethrough
@@ -44,7 +44,7 @@ Key styling decisions:
 
 ---
 
-# 3. script.js — The JavaScript Logic
+# 3. script.js-The JavaScript Logic
 
 # The Data
 All habits are stored in one array of objects the single source of truth:
